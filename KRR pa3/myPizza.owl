@@ -1,0 +1,633 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#"
+     xml:base="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasBase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasCalorieLevelOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasCalorieLevelOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#originatedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#originatedFrom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#popularAmong -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#popularAmong"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#spicyLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#spicyLevel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#AmericanPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#AmericanPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MeatyPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PepperoniTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#originatedFrom"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#spicyLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CalorieLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CalorieLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#GeneralDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CheeseBurstBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CheeseBurstBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CheeseTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#ChickenTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#ChickenTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#GeneralDomainConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#GeneralDomainConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Generation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Generation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#GeneralDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MargheritaPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MargheritaPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#originatedFrom"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#spicyLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MeatTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MeatTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MeatyPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MeatyPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MeatTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#spicyLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Hot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MeatyVegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MeatyVegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MeatTopping"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MozzarellaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MozzarellaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#NamedPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#NamedPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Nationality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Nationality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#GeneralDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#OliveTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#OliveTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#OnionTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#OnionTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PanCrustBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PanCrustBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#ParmezanTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#ParmezanTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PepperoniTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PepperoniTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Pizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaDomainConcept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaDomainConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaDomainConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#SohoPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#SohoPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CheeseTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MozzarellaTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#OliveTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#ParmezanTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#TomatoTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#originatedFrom"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#spicyLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Hot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Spiciness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Spiciness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#ThreeMeatPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#ThreeMeatPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CheeseTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#ChickenTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#MeatTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PepperoniTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#spicyLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#TomatoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#TomatoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#VegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#VegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#VeggiePizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#VeggiePizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CheeseTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#OliveTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#OnionTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#TomatoTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#VegetableTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#originatedFrom"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#spicyLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#America -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#America">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Nationality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#High -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#High">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CalorieLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Hot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Hot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Spiciness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Nationality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Low">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CalorieLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Medium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CalorieLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Mexico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Mexico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Nationality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Mild -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Mild">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Spiciness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#ThisPizza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#ThisPizza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#AmericanPizza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#10s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#10s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#20s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#20s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#30s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#30s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#40s_above -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#40s_above">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#CalorieLevel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Generation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Nationality"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#PizzaTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aditi/ontologies/2022/3/myPizza.owl#Spiciness"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

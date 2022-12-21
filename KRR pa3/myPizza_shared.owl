@@ -1,0 +1,910 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasBase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasCalorieLevelOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasCalorieLevelOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#originatedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#originatedFrom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#popularAmong -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#popularAmong"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#spicyLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#spicyLevel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#AmericanPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#AmericanPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RegularBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasCalorieLevelOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#originatedFrom"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#popularAmong"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#10s"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#spicyLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#BeefTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#BeefTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CabageTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CabageTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CalorieLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CalorieLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#GeneralDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheddarTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheddarTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheeseTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#ParmezanTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheeseTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheezyPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheezyPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheeseTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CrabTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CrabTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SeafoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#GeneralDomainConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#GeneralDomainConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Generation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Generation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#GeneralDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#HamTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#HamTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#KimchiTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#KimchiTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MargheritaPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MargheritaPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RegularBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasCalorieLevelOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#originatedFrom"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#popularAmong"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#10s"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#spicyLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatyPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatyPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatyVegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatyVegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatTopping"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MozzarellaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MozzarellaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#NamedPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#NamedPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Nationality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Nationality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#GeneralDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#OceanPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#OceanPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RegularBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CrabTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#OliveTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RobsterTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#ShrimpTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasCalorieLevelOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#originatedFrom"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#popularAmong"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#10s"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#popularAmong"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#20s"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#spicyLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#OliveTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#OliveTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#ParmezanTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#ParmezanTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheeseTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PepperoniTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PepperoniTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Pizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaDomainConcept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaDomainConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaDomainConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RegularBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RegularBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RiceBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RiceBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RobsterTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RobsterTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SeafoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SeafoodPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SeafoodPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SeafoodTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SeafoodTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SeafoodTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#ShrimpTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#ShrimpTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SeafoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SohoPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SohoPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RegularBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#ParmezanTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasCalorieLevelOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#originatedFrom"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#popularAmong"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#40s_above"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#spicyLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Spiciness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Spiciness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SpicyPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SpicyPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#spicyLevel"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Hot"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TacoPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TacoPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RiceBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheddarTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasCalorieLevelOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#originatedFrom"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Mexico"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#popularAmong"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#40s_above"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#spicyLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Hot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TomatoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TomatoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#VegetablePizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#VegetablePizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#VegetableTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#VegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#VegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#America -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#America">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Nationality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#AmericanPizza1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#AmericanPizza1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#AmericanPizza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#AmericanPizza2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#AmericanPizza2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#AmericanPizza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#High -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#High">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CalorieLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Hot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Hot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Spiciness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Nationality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Low">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CalorieLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Medium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CalorieLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Mexico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Mexico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Nationality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Mild -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Mild">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Spiciness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#OceanPizza1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#OceanPizza1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#OceanPizza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TacoPizza1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TacoPizza1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TacoPizza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#ThisPizza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#ThisPizza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#AmericanPizza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#10s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#10s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#20s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#20s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#30s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#30s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#40s_above -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#40s_above">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#BeefTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#HamTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatyVegetableTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PepperoniTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CabageTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatyVegetableTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#OliveTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CalorieLevel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Generation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Nationality"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheeseTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#KimchiTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MeatTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MozzarellaTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SeafoodTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TomatoTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CheeseTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#KimchiTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#MozzarellaTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#SeafoodTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#TomatoTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#VegetableTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#CrabTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#RobsterTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#ShrimpTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#PizzaTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ssh90/ontologies/2021/3/untitled-ontology-12#Spiciness"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->

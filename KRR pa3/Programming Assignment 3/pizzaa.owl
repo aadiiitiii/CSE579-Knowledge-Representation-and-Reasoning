@@ -1,0 +1,750 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#"
+     xml:base="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasBase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasSpiciness -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasSpiciness">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasSpiciness"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Hot"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Medium"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Mild"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#AmericanHotPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#AmericanHotPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ChickenTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ItalianSausageTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#JalapenoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PanCrustBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasCountry"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#USA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#AmericanPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#AmericanPizza">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasCountry"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#USA"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PepperoniTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#BellPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#BellPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#CheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#CheeseTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ChicagoDeepDishPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ChicagoDeepDishPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#DeepDishBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#CheeseTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ChickenTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PepperoniTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasCountry"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#USA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ChickenTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ChickenTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Hot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Country">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Domain"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#France"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Germany"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Italy"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#USA"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Domain"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Spicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#DeepDishBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#DeepDishBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Domain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Hot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Hot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Spiciness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#InterestingPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#InterestingPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ItalianSausageTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ItalianSausageTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#JalapenoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#JalapenoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MargheritaPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MargheritaPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasCountry"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatLoverPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatLoverPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PanCrustBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ChickenTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ItalianSausageTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PepperoniTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasCountry"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatyPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatyPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatyVegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatyVegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatTopping"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Spiciness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Mild -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Mild">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Spiciness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MozzarellaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MozzarellaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#NamedPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#NamedPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#OliveTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#OliveTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PanCrustBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PanCrustBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ParmezanTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ParmezanTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PepperoniTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PepperoniTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Pizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaDomainConcept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaDomainConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaDomainConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaDomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#SohoPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#SohoPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#OliveTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ParmezanTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PepperoniTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasCountry"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Spiciness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Spiciness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Hot"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Medium"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Mild"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Spicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Spicy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Spicy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#SpicyPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#SpicyPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#SpicyTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#SpicyTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#SpicyTopping">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasSpiciness"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Hot"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#TomatoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#TomatoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#VegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#VegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Hot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#France"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Germany"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ThisPizza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ThisPizza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#AmericanPizza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#USA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#USA"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#CheeseTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MeatTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#MozzarellaTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#OliveTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#ParmezanTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#TomatoTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Hot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Medium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Mild"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anubhav/ontologies/2019/10/myPizza.owl#PizzaTopping"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
